@@ -1,0 +1,20 @@
+{
+  "name": "minify",
+  "version": "1.0.0",
+  "description": "javascript minify",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently \"minify index.html > build/index.html \" \"minify css/main.css > build/css/main.css \" \"minify js/script.js > build/js/script.js \""
+  },
+  "keywords": [
+    "minify",
+    "start",
+    "project"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "minify": "^10.3.0"
+  }
+}
